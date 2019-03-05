@@ -1,11 +1,23 @@
-var Total = 0;
+var total = 0;
 var anyNumber;
 var output;
 var dice  = {
   sides: 6,
   roll: function () {
-    var randomNumber = Math.floor(Math.random() * 6) + 1;
-      return randomNumber += 1;
+    var anyNumber = Math.floor(Math.random() * 6) + 1;
+       total+=anyNumber
+        if(1 < anyNumber){
+          $('.dice').prop(false);
+          return anyNumber;
+        }else if (anyNumber===1) {
+          total=0
+          $('.dice').prop(true);
+          $('.dice').prop(false)
+        }
+
+
+
+     //return randomNumber += 1;
 
   }
 }
@@ -25,3 +37,22 @@ button.onclick = function() {
   var result = dice.roll();
   printNumber(result);
 };
+
+//roll2: function () {
+  //var anyNumber = Math.floor(Math.random() * 6) + 1;
+    // total+=anyNumber
+      //if(1 < anyNumber){
+        //$('.dice').prop(false);
+        //return anyNumber;
+      //}else if (anyNumber===1) {
+        //total=0
+      //   $('.dice').prop(true);
+      //   $('.dice').prop(false)
+      // }
+      //
+      //
+      //  function rolldice() {
+      //   var output = anyNumber.roll();
+      //   return output;
+      //
+      // }
