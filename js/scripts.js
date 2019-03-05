@@ -1,7 +1,7 @@
-var Total = 21;
+var Total = 0;
 var anyNumber;
 var output;
-var dice = {
+var dice  = {
   sides: 6,
   roll: function () {
     var randomNumber = Math.floor(Math.random() * 6) + 1;
@@ -9,6 +9,7 @@ var dice = {
 
   }
 }
+
 
 
 
