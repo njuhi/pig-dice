@@ -1,8 +1,12 @@
+var Total = 21;
+var anyNumber;
+var output;
 var dice = {
   sides: 6,
   roll: function () {
-    var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-    return randomNumber;
+    var randomNumber = Math.floor(Math.random() * 6) + 1;
+      return randomNumber += 1;
+
   }
 }
 
@@ -20,6 +24,3 @@ button.onclick = function() {
   var result = dice.roll();
   printNumber(result);
 };
-
-
-
