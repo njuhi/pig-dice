@@ -1,5 +1,6 @@
 p{
   font-family: 'Black Ops One', cursive;
+  background:brown;
 }
 
 body{
@@ -10,7 +11,5 @@ body{
 }
 .well{
   color: red;
-}
-p{
-  color:blue;
+  background-color:black;
 }

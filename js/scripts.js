@@ -11,9 +11,11 @@ var dice  = {
           return anyNumber;
         }else if (anyNumber===1) {
           total=0
-          $('.dice').prop(true);
+          $('.dice').
+          prop(true);
           $('.dice').prop(false)
         }
+
 
 
 
@@ -56,3 +58,29 @@ button.onclick = function() {
       //   return output;
       //
       // }
+        // roll: function () {
+        //   var anyNumber = Math.floor(Math.random() * 6) + 1;
+        //      total+=anyNumber
+        //       if(1 < anyNumber){
+        //         $('.dice').prop(false);
+        //         return anyNumber;
+        //       }else if (anyNumber===1) {
+        //         total=0
+        //         $('.dice').
+        //         prop(true);
+        //         $('.dice').prop(false)
+        //       }
+        //
+        //
+        //
+        //       function printNumber(number) {
+        //         var player2 = document.getElementById('player2');
+        //         player2.innerHTML = number;
+        //       }
+        //
+        //       var button = document.getElementById('button');
+        //
+        //       button.onclick = function() {
+        //         var result = dice.roll();
+        //         printNumber(result);
+        //       };
